@@ -1,59 +1,74 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgYXJpYS1oaWRkZW49InRydWUiPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE2IiBmaWxsPSIjMWU4OGRiIi8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmRiMTBhIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTIyIDIzIDEyIDMybDEwIDkiLz48cGF0aCBkPSJtNDIgMjMgMTAgOS0xMCA5Ii8+PHBhdGggZD0iTTM2IDE1IDI4IDQ5Ii8+PC9nPjwvc3ZnPg==" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="hardpress.dev" href="/feed.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>:root{
-  --bg:#fff; --text:#1a1a1a; --muted:#5c6168; --line:#e4e6e9;
-  --blue:#1e88db; --blue-ink:#1469a8; --yellow:#fdb10a;
-  --font:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hardpress.dev | Docs, Trainings, and Projects in the Open</title>
+<meta name="description" content="Practical guides, hands-on trainings, and open source projects from hardpress.dev. Read the docs, follow the blog, and fork the code.">
+<link rel="canonical" href="https://hardpress.dev/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Icons -->
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="hardpress.dev">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="hardpress.dev | Docs, Trainings, and Projects in the Open">
+<meta property="og:description" content="Practical guides, hands-on trainings, and open source projects from hardpress.dev. Read the docs, follow the blog, and fork the code.">
+<meta property="og:url" content="https://hardpress.dev/">
+<meta property="og:image" content="https://hardpress.dev/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="hardpress.dev logo with the tagline: Docs, trainings, and projects, published in the open.">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="hardpress.dev | Docs, Trainings, and Projects in the Open">
+<meta name="twitter:description" content="Practical guides, hands-on trainings, and open source projects from hardpress.dev. Read the docs, follow the blog, and fork the code.">
+<meta name="twitter:image" content="https://hardpress.dev/images/og-image.png">
+<meta name="twitter:image:alt" content="hardpress.dev logo with the tagline: Docs, trainings, and projects, published in the open.">
+<!-- <meta name="twitter:site" content="@yourhandle"> -->
+
+<!-- Feed + fonts + styles -->
+<link rel="alternate" type="application/rss+xml" title="hardpress.dev" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "hardpress.dev",
+  "url": "https://hardpress.dev/",
+  "description": "Practical guides, hands-on trainings, and open source projects from hardpress.dev. Read the docs, follow the blog, and fork the code.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "hardpress.dev",
+    "url": "https://hardpress.dev/",
+    "logo": "https://hardpress.dev/images/icon-512.png"
+  }
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font:1.0625rem/1.65 var(--font);-webkit-font-smoothing:antialiased}
-.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
-a{color:var(--blue-ink);text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:2px;text-underline-offset:3px}
-a:hover{background:var(--yellow);color:var(--text);text-decoration-color:transparent}
-a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-header{border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1rem;padding-bottom:1rem}
-.brand{display:flex;align-items:center;gap:.6rem;font-weight:700;font-size:1.2rem;color:var(--text);text-decoration:none}
-.brand:hover{background:none}
-.brand svg{width:2rem;height:2rem}
-nav{display:flex;gap:1.25rem;flex-wrap:wrap}
-nav a{color:var(--text);font-weight:500;text-decoration:none;border-bottom:2px solid transparent}
-nav a:hover{background:none;border-bottom-color:var(--yellow)}
-nav a[aria-current]{border-bottom-color:var(--blue)}
-.hero{padding:4.5rem 0 3rem}
-h1{font-size:clamp(2.1rem,6vw,3.25rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 1rem;font-weight:800}
-.lede{font-size:1.25rem;color:var(--muted);max-width:34rem;margin:0}
-section{padding:2.25rem 0 1rem}
-h2{font-size:1.35rem;margin:0 0 .5rem;display:flex;align-items:baseline;justify-content:space-between;gap:1rem;font-weight:700}
-h2 a{font-size:.95rem;font-weight:500}
-ul.list{list-style:none;margin:0;padding:0;border-top:3px solid var(--blue)}
-.list li{display:grid;grid-template-columns:1fr auto;gap:.15rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--line)}
-.list .title{font-weight:600}
-.list .desc{grid-column:1;color:var(--muted);margin:0}
-.list .meta{grid-column:2;grid-row:1;color:var(--muted);font-size:.95rem;white-space:nowrap}
-.tag{background:var(--yellow);color:var(--text);padding:.05rem .5rem;border-radius:99px;font-size:.85rem;font-weight:600}
-footer{margin-top:4rem;border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem}
-footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-/* post pages */
-article{padding:3rem 0}
-article h1{font-size:clamp(1.9rem,5vw,2.6rem)}
-article .meta{color:var(--muted);margin:0 0 2rem}
-article p,article li{max-width:40rem}
-article pre{background:#f6f7f8;border:1px solid var(--line);border-left:4px solid var(--blue);padding:1rem;overflow-x:auto;font-size:.95rem}
-article code{background:#f6f7f8;padding:.1rem .3rem;border-radius:3px}
-article pre code{background:none;padding:0}
-@media (max-width:30rem){.list li{grid-template-columns:1fr}.list .meta{grid-column:1;grid-row:auto}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style><title>hardpress.dev</title><meta name="description" content="Docs, trainings, projects, and writing from hardpress.dev."></head>
-<body><header><div class="wrap"><a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#1e88db"/><g fill="none" stroke="#fdb10a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 23 12 32l10 9"/><path d="m42 23 10 9-10 9"/><path d="M36 15 28 49"/></g></svg> hardpress</a><nav aria-label="Main"><a href="/#projects">Projects</a><a href="/#trainings">Trainings</a><a href="/#blog">Blog</a><a href="/#docs">Docs</a><a href="/feed.xml">RSS</a></nav></div></header>
+</script>
+</head>
+<body><header><div class="wrap"><a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#151515"/><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.6"><g stroke="#42e0de"><path d="M21.9 22.7 11.7 31.8 21.9 41"/><path d="M41.9 22.7 52.2 31.8 41.9 41"/></g><path stroke="#b53a5a" d="M35.7 15 28 48.8"/></g></svg> hardpress</a><nav aria-label="Main"><a href="/#projects">Projects</a><a href="/#trainings">Trainings</a><a href="/#blog">Blog</a><a href="/#docs">Docs</a><a href="/feed.xml">RSS</a></nav></div></header>
 <main class="wrap">
 <div class="hero"><h1>Docs, trainings, and projects, published in the open.</h1>
 <p class="lede">Practical guides and working code. Read it, fork it, use it.</p></div>
 
 <section id="projects"><h2>Projects <a href="#">All projects</a></h2>
 <ul class="list">
-<li><span class="title"><a href="https://github.com/YOUR-USERNAME/project-one">Project One</a></span><span class="meta"><span class="tag">Active</span></span><p class="desc">One sentence on what it does and who it is for.</p></li>
-<li><span class="title"><a href="https://github.com/YOUR-USERNAME/project-two">Project Two</a></span><span class="meta">Planned</span><p class="desc">Add your next project here. Copy this row.</p></li>
+<li><span class="title"><a href="https://github.com/hardpress-dev/main">Project One</a></span><span class="meta"><span class="tag">Active</span></span><p class="desc">One sentence on what it does and who it is for.</p></li>
+<li><span class="title"><a href="https://github.com/hardpress-dev/main">Project Two</a></span><span class="meta">Planned</span><p class="desc">Add your next project here. Copy this row.</p></li>
 </ul></section>
 
 <section id="trainings"><h2>Trainings <a href="#">All trainings</a></h2>
@@ -72,4 +87,4 @@ article pre code{background:none;padding:0}
 <li><span class="title"><a href="#">Getting started</a></span><span class="meta">Guide</span><p class="desc">Point this at a /docs folder, or at a docs site such as MkDocs.</p></li>
 </ul></section>
 </main>
-<footer><div class="wrap"><span>© 2026 hardpress.dev</span><span><a href="https://github.com/YOUR-USERNAME">GitHub</a> · <a href="/feed.xml">RSS</a></span></div></footer></body></html>
+<footer><div class="wrap"><span>© 2026 hardpress.dev</span><span class="foot-links"><button class="btn btn-sm theme-toggle" type="button">Dark mode</button><a href="https://github.com/hardpress-dev/main">GitHub</a><a href="/feed.xml">RSS</a></span></div></footer><script src="/site.js" defer></script></body></html>

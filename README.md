@@ -4,7 +4,7 @@ Static site for GitHub Pages. No build step.
 
 ## Files
 - `index.html` home page (projects, trainings, blog, docs)
-- `style.css` all styling; colors are variables at the top (light) and under `[data-theme="dark"]`
+- `style.css` all styling; colors are variables at the top (white, neon cyan highlights, near-black text) and under `[data-theme="dark"]`
 - `site.js` dark mode toggle, code block copy buttons, share buttons
 - `blog/first-post.html` copy for each new post
 - `feed.xml` RSS; add an `<item>` for each post
