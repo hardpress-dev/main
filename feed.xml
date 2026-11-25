@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>hardpress.dev</title>
+<link>https://hardpress.dev/</link>
+<description>Docs, trainings, projects, and writing from hardpress.dev.</description>
+<item>
+<title>Hello, world</title>
+<link>https://hardpress.dev/blog/first-post.html</link>
+<guid>https://hardpress.dev/blog/first-post.html</guid>
+<pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
+<description>Why this site exists and what to expect.</description>
+</item>
+</channel></rss>
