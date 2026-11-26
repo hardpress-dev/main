@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wireframes for Data Analysis: Sketch It Before You Build It | hardpress.dev</title>
+<meta name="description" content="A plain-English guide to wireframing a dashboard: what it is, why it saves time, and how to draw one in an afternoon.">
+<link rel="canonical" href="https://hardpress.dev/blog/wireframe-development-for-data-analysis.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Icons -->
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-08-18">
+<meta property="og:site_name" content="hardpress.dev">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Wireframes for Data Analysis: Sketch It Before You Build It | hardpress.dev">
+<meta property="og:description" content="A plain-English guide to wireframing a dashboard: what it is, why it saves time, and how to draw one in an afternoon.">
+<meta property="og:url" content="https://hardpress.dev/blog/wireframe-development-for-data-analysis.html">
+<meta property="og:image" content="https://hardpress.dev/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="hardpress.dev logo with the tagline: Docs, trainings, and projects, published in the open.">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wireframes for Data Analysis: Sketch It Before You Build It | hardpress.dev">
+<meta name="twitter:description" content="A plain-English guide to wireframing a dashboard: what it is, why it saves time, and how to draw one in an afternoon.">
+<meta name="twitter:image" content="https://hardpress.dev/images/og-image.png">
+<meta name="twitter:image:alt" content="hardpress.dev logo with the tagline: Docs, trainings, and projects, published in the open.">
+<!-- <meta name="twitter:site" content="@yourhandle"> -->
+
+<!-- Feed + fonts + styles -->
+<link rel="alternate" type="application/rss+xml" title="hardpress.dev" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Wireframes for Data Analysis: Sketch It Before You Build It",
+  "description": "A plain-English guide to wireframing a dashboard: what it is, why it saves time, and how to draw one in an afternoon.",
+  "datePublished": "2026-08-18",
+  "mainEntityOfPage": "https://hardpress.dev/blog/wireframe-development-for-data-analysis.html",
+  "image": "https://hardpress.dev/images/og-image.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "hardpress.dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hardpress.dev/images/icon-512.png"
+    }
+  }
+}
+</script>
+</head>
+<body><header><div class="wrap"><a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#151515"/><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.6"><g stroke="#42e0de"><path d="M21.9 22.7 11.7 31.8 21.9 41"/><path d="M41.9 22.7 52.2 31.8 41.9 41"/></g><path stroke="#b53a5a" d="M35.7 15 28 48.8"/></g></svg> hardpress</a><nav aria-label="Main"><a href="/#projects">Projects</a><a href="/#trainings">Trainings</a><a href="/#blog">Blog</a><a href="/#docs">Docs</a><a href="/feed.xml">RSS</a></nav></div></header>
+<main class="wrap"><article>
+<h1>Wireframes for Data Analysis: Sketch It Before You Build It</h1>
+<p class="meta">Aug 18, 2026</p>
+<p>A <strong>dashboard</strong> is a single screen of charts and numbers that helps people make decisions. A <strong>wireframe</strong> is a rough sketch of that screen, drawn before anyone builds it. Think of it as a floor plan for a house: no paint, no furniture, just where the rooms go.</p>
+<h2>Why bother?</h2>
+<p>Most dashboard projects stall because people disagree about what the screen should show, and they find out only after the work is done. Moving a box on a sketch takes minutes. Rebuilding a finished report takes days.</p>
+<h2>Step 1: Start with questions, not data</h2>
+<p>Write down the three to five decisions the dashboard should help with, such as "Are sales on track this month?" Then list the one number that answers each. If a chart doesn’t help a decision, leave it out. Design guides commonly suggest keeping the first screen to about five or six main items.</p>
+<h2>Step 2: Place things the way people read</h2>
+<p>People scan from top-left to bottom-right, so put the most important numbers first, trends in the middle, and detail tables at the bottom. Make the most important block the biggest. Mark filters, like a date picker, as labelled boxes.</p>
+<pre><code>+--------------------------------------------------+
+| Sales Overview     [Date range v]  [Region v]    |
++-----------+-----------+-----------+--------------+
+| Revenue   | Orders    | Conversion| Refunds      |
++-----------+-----------+-----------+--------------+
+| Revenue over time (line chart)   | Sales by      |
+|                                  | channel (bar) |
++----------------------------------+---------------+
+| Top 10 products (table)                          |
++--------------------------------------------------+</code></pre>
+<h2>Step 3: Add notes for the people who will build it</h2>
+<p>Beside each box, jot down where the numbers come from, how they are calculated, and how often they refresh. Now your sketch doubles as a simple instruction sheet, and gaps show up early.</p>
+<h2>Step 4: Share, listen, redraw</h2>
+<p>Show it to the people who will use it. Ask what they would do with each box. Redraw and repeat. You can use paper, PowerPoint, Figma, Excalidraw or a dedicated tool. The tool matters far less than the conversation.</p>
+<p><strong>A note on AI:</strong> an AI assistant can draft a first sketch if you give it your questions and numbers in plain language. Treat that draft as a starting point for the same review rounds.</p>
+<div style="position:relative;aspect-ratio:16/9;margin:1.5rem 0"><iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:8px" src="https://www.youtube-nocookie.com/embed/rRtKF34bdko" title="How To Wireframe A Dashboard In 10 Minutes" loading="lazy" allowfullscreen></iframe></div><p>The video above shows a quick way to wireframe in PowerPoint.</p>
+<h2>Further reading</h2>
+<ul><li><a href="https://builtin.com/design-ux/build-better-dashboard-wireframe" rel="noopener">5 Ways to Build a Better Dashboard Wireframe</a> (Built In): user-centred layout tips</li><li><a href="https://uxplanet.org/6-best-practices-for-dashboard-design-991a37682447" rel="noopener">6 Best Practices for Dashboard Design</a> (UX Planet): clear examples</li><li><a href="https://www.thedataschool.co.uk/leigh-davis/wireframing-a-tableau-dashboard" rel="noopener">Wireframing a Tableau Dashboard</a> (The Data School): a free-tool walkthrough</li><li><a href="https://mockflow.com/blog/how-to-create-dashboard-wireframes" rel="noopener">How to Create Dashboard Wireframes</a> (MockFlow): steps and common mistakes</li><li><a href="https://www.aha.io/roadmapping/guide/designs/templates/create/analytics-dashboard-wireframe" rel="noopener">Analytics dashboard wireframe template</a> (Aha!): a starter template</li></ul>
+<div class="share">
+<button class="btn" type="button" data-copy="link">Copy link</button>
+<button class="btn" type="button" data-copy="text">Copy post text</button>
+<span class="share-status" role="status" aria-live="polite"></span>
+</div>
+<p class="back"><a href="/#blog">Back to all posts</a></p>
+</article></main>
+<footer><div class="wrap"><span>© 2026 hardpress.dev</span><span class="foot-links"><button class="btn btn-sm theme-toggle" type="button">Dark mode</button><a href="https://github.com/hardpress-dev/main">GitHub</a><a href="/feed.xml">RSS</a></span></div></footer><script src="/site.js" defer></script></body></html>

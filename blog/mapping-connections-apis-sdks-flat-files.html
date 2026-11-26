@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mapping Your Connections: APIs, SDKs and Flat Files | hardpress.dev</title>
+<meta name="description" content="Three ways computer systems share information, explained without jargon, plus a simple way to map them.">
+<link rel="canonical" href="https://hardpress.dev/blog/mapping-connections-apis-sdks-flat-files.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Icons -->
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-09-22">
+<meta property="og:site_name" content="hardpress.dev">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Mapping Your Connections: APIs, SDKs and Flat Files | hardpress.dev">
+<meta property="og:description" content="Three ways computer systems share information, explained without jargon, plus a simple way to map them.">
+<meta property="og:url" content="https://hardpress.dev/blog/mapping-connections-apis-sdks-flat-files.html">
+<meta property="og:image" content="https://hardpress.dev/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="hardpress.dev logo with the tagline: Docs, trainings, and projects, published in the open.">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mapping Your Connections: APIs, SDKs and Flat Files | hardpress.dev">
+<meta name="twitter:description" content="Three ways computer systems share information, explained without jargon, plus a simple way to map them.">
+<meta name="twitter:image" content="https://hardpress.dev/images/og-image.png">
+<meta name="twitter:image:alt" content="hardpress.dev logo with the tagline: Docs, trainings, and projects, published in the open.">
+<!-- <meta name="twitter:site" content="@yourhandle"> -->
+
+<!-- Feed + fonts + styles -->
+<link rel="alternate" type="application/rss+xml" title="hardpress.dev" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mapping Your Connections: APIs, SDKs and Flat Files",
+  "description": "Three ways computer systems share information, explained without jargon, plus a simple way to map them.",
+  "datePublished": "2026-09-22",
+  "mainEntityOfPage": "https://hardpress.dev/blog/mapping-connections-apis-sdks-flat-files.html",
+  "image": "https://hardpress.dev/images/og-image.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "hardpress.dev",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hardpress.dev/images/icon-512.png"
+    }
+  }
+}
+</script>
+</head>
+<body><header><div class="wrap"><a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#151515"/><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.6"><g stroke="#42e0de"><path d="M21.9 22.7 11.7 31.8 21.9 41"/><path d="M41.9 22.7 52.2 31.8 41.9 41"/></g><path stroke="#b53a5a" d="M35.7 15 28 48.8"/></g></svg> hardpress</a><nav aria-label="Main"><a href="/#projects">Projects</a><a href="/#trainings">Trainings</a><a href="/#blog">Blog</a><a href="/#docs">Docs</a><a href="/feed.xml">RSS</a></nav></div></header>
+<main class="wrap"><article>
+<h1>Mapping Your Connections: APIs, SDKs and Flat Files</h1>
+<p class="meta">Sep 22, 2026</p>
+<p>Every business runs on several tools: a sales system, an accounting system, a spreadsheet or two. Getting them to share information is called <strong>integration</strong>. Before building anything, it helps to draw a map of what connects to what. There are three common ways to connect.</p>
+<h2>Flat files: the shared spreadsheet</h2>
+<p>A <strong>flat file</strong> is a plain table of data, usually a CSV or text file. One system exports it, another imports it, often on a schedule. Almost every tool supports this, and anyone can open the file in Excel. The downside: the data is only as fresh as the last export, and you must check each file for errors yourself.</p>
+<h2>APIs: the waiter between two systems</h2>
+<p>An <strong>API</strong> (application programming interface) is a set of rules that lets one system ask another for specific information, like a waiter carrying your order to the kitchen and bringing back the dish. It is quick and can run continuously. Watch for limits on how many requests you can make, and for charges per request.</p>
+<h2>SDKs: a ready-made toolbox</h2>
+<p>An <strong>SDK</strong> (software development kit) is a toolbox that makes using an API easier for developers. It handles the repetitive parts so they write less code. It still relies on the API underneath.</p>
+<h2>Drawing your map</h2>
+<p>List each connection with four facts: what it links, which method it uses, how often it updates, and who owns it. For example:</p>
+<pre><code>Connection            Method       Updates     Owner
+Online store -&gt; CRM   API          Live        Sales ops
+Bank -&gt; Accounting    Flat file    Nightly     Finance
+Survey tool -&gt; Sheet  SDK script   Hourly      Marketing</code></pre>
+<h2>Which should you pick?</h2>
+<p>A simple rule: use an API when the tool offers one that does what you need. Use flat files when it doesn’t, or when you are moving large batches. Many companies use both. Whatever you pick, write down what should happen when a connection fails, because eventually one will.</p>
+<div style="position:relative;aspect-ratio:16/9;margin:1.5rem 0"><iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:8px" src="https://www.youtube-nocookie.com/embed/GlgWBaEtdeA" title="API vs SDK: the difference" loading="lazy" allowfullscreen></iframe></div><p>This short video explains how APIs and SDKs differ.</p>
+<h2>Further reading</h2>
+<ul><li><a href="https://www.merge.dev/blog/flat-file-integration-vs-api" rel="noopener">API vs flat file integration</a> (Merge): how to choose</li><li><a href="https://nanonets.com/blog/flat-file-integration-vs-api/" rel="noopener">Flat file vs API integration</a> (Nanonets): speed, scale and ease of use</li><li><a href="https://tipalti.com/resources/learn/flat-file-integration-vs-api/" rel="noopener">Flat-file vs API for accounts payable</a> (Tipalti): pros and cons with examples</li><li><a href="https://www.ibm.com/think/topics/api-vs-sdk" rel="noopener">SDK vs. API: what’s the difference?</a> (IBM): how the two work together</li><li><a href="https://www.fishbowlinventory.com/blog/api-vs-flat-file-for-data-transfers-which-method-is-better" rel="noopener">API vs flat file for data transfers</a> (Fishbowl): a beginner-friendly comparison</li></ul>
+<div class="share">
+<button class="btn" type="button" data-copy="link">Copy link</button>
+<button class="btn" type="button" data-copy="text">Copy post text</button>
+<span class="share-status" role="status" aria-live="polite"></span>
+</div>
+<p class="back"><a href="/#blog">Back to all posts</a></p>
+</article></main>
+<footer><div class="wrap"><span>© 2026 hardpress.dev</span><span class="foot-links"><button class="btn btn-sm theme-toggle" type="button">Dark mode</button><a href="https://github.com/hardpress-dev/main">GitHub</a><a href="/feed.xml">RSS</a></span></div></footer><script src="/site.js" defer></script></body></html>
