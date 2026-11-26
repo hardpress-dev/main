@@ -56,7 +56,14 @@ article pre code{background:none;padding:0}
 .share{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid var(--line)}
 .share-status{color:var(--muted);font-size:.95rem}
 .code{position:relative;margin:1.25rem 0}
-.code pre{margin:0;padding-right:5.5rem}
-.copy-code{position:absolute;top:.5rem;right:.5rem;font-size:.8rem;padding:.15rem .6rem;border-radius:6px}
+.code pre{margin:0;padding-right:3.5rem}
+.copy-code{position:absolute;top:.5rem;right:.5rem;font-size:.8rem;padding:.35rem;line-height:0;border-radius:6px}
+.copy-code svg{display:block;width:1rem;height:1rem}
+/* additions: tag spacing, post headings/lists, responsive video embeds */
+.list .meta .tag{margin-left:.35rem}
+article h2{margin:2.25rem 0 .5rem;display:block}
+article ul{padding-left:1.25rem}
+.video{position:relative;aspect-ratio:16/9;max-width:40rem;margin:1.5rem 0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 @media (max-width:30rem){.list li{grid-template-columns:1fr}.list .meta{grid-column:1;grid-row:auto}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
