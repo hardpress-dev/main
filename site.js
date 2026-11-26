@@ -2,9 +2,11 @@
   /* Theme toggle (default light; choice is remembered) */
   var root = document.documentElement;
   var themeBtn = document.querySelector('.theme-toggle');
+  var metaTheme = document.querySelector('meta[name="theme-color"]');
   function applyTheme(dark) {
     if (dark) root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
-    if (themeBtn) themeBtn.textContent = dark ? 'Light mode' : 'Dark mode';
+    if (themeBtn) themeBtn.textContent = dark ? 'Light' : 'Dark';
+    if (metaTheme) metaTheme.setAttribute('content', dark ? '#121212' : '#ffffff');
   }
   applyTheme(root.getAttribute('data-theme') === 'dark');
   if (themeBtn) themeBtn.addEventListener('click', function () {
