@@ -10,4 +10,32 @@
 <pubDate>Tue, 24 Nov 2026 12:00:00 GMT</pubDate>
 <description>Why this site exists and what to expect.</description>
 </item>
+<item>
+<title>AI Agents That Actually Work</title>
+<link>https://hardpress.dev/blog/agents-that-work.html</link>
+<guid>https://hardpress.dev/blog/agents-that-work.html</guid>
+<pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+<description>What an AI agent is, when you need one, and the habits that separate useful agents from expensive experiments.</description>
+</item>
+<item>
+<title>AI Skills: How Assistants Learn Your Way of Working</title>
+<link>https://hardpress.dev/blog/how-ai-skills-make-llms-smarter.html</link>
+<guid>https://hardpress.dev/blog/how-ai-skills-make-llms-smarter.html</guid>
+<pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+<description>Skills are instruction folders that help AI assistants do specialist tasks well. Here is how they work, in plain English.</description>
+</item>
+<item>
+<title>Mapping Your Connections: APIs, SDKs and Flat Files</title>
+<link>https://hardpress.dev/blog/mapping-connections-apis-sdks-flat-files.html</link>
+<guid>https://hardpress.dev/blog/mapping-connections-apis-sdks-flat-files.html</guid>
+<pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
+<description>Three ways computer systems share information, explained without jargon, plus a simple way to map them.</description>
+</item>
+<item>
+<title>Wireframes for Data Analysis: Sketch It Before You Build It</title>
+<link>https://hardpress.dev/blog/wireframe-development-for-data-analysis.html</link>
+<guid>https://hardpress.dev/blog/wireframe-development-for-data-analysis.html</guid>
+<pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
+<description>A plain-English guide to wireframing a dashboard: what it is, why it saves time, and how to draw one in an afternoon.</description>
+</item>
 </channel></rss>
