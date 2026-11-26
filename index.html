@@ -65,21 +65,23 @@
 <div class="hero"><h1>Docs, trainings, and projects, published in the open.</h1>
 <p class="lede">Practical guides and working code. Read it, fork it, use it.</p></div>
 
-<section id="projects"><h2>Projects <a href="#">All projects</a></h2>
-<ul class="list">
-<li><span class="title"><a href="https://github.com/hardpress-dev/main">Project One</a></span><span class="meta"><span class="tag">Active</span></span><p class="desc">One sentence on what it does and who it is for.</p></li>
-<li><span class="title"><a href="https://github.com/hardpress-dev/main">Project Two</a></span><span class="meta">Planned</span><p class="desc">Add your next project here. Copy this row.</p></li>
-</ul></section>
-
-<section id="trainings"><h2>Trainings <a href="#">All trainings</a></h2>
-<ul class="list">
-<li><span class="title"><a href="#">Training title</a></span><span class="meta">Beginner · 2 hrs</span><p class="desc">What someone will be able to do after finishing it.</p></li>
-<li><span class="title"><a href="#">Another training</a></span><span class="meta">Coming soon</span><p class="desc">Link each training to its own page or repo.</p></li>
-</ul></section>
-
 <section id="blog"><h2>Blog <a href="/feed.xml">Subscribe via RSS</a></h2>
 <ul class="list">
-<li><span class="title"><a href="/blog/first-post.html">Hello, world</a></span><span class="meta">Nov 24, 2026</span><p class="desc">Why this site exists and what to expect.</p></li>
+<li data-tags="site"><span class="title"><a href="/blog/first-post.html">Hello, world</a></span><span class="meta">Nov 24, 2026 <span class="tag">site</span></span><p class="desc">Why this site exists and what to expect.</p></li>
+<li data-tags="ai agents"><span class="title"><a href="/blog/agents-that-work.html">AI Agents That Actually Work</a></span><span class="meta">Nov 12, 2026 <span class="tag">ai</span><span class="tag">agents</span></span><p class="desc">What an AI agent is, when you need one, and the habits that separate useful agents from expensive experiments.</p></li>
+<li data-tags="ai skills"><span class="title"><a href="/blog/how-ai-skills-make-llms-smarter.html">AI Skills: How Assistants Learn Your Way of Working</a></span><span class="meta">Oct 20, 2026 <span class="tag">ai</span><span class="tag">skills</span></span><p class="desc">Skills are instruction folders that help AI assistants do specialist tasks well. Here is how they work, in plain English.</p></li>
+<li data-tags="data integration"><span class="title"><a href="/blog/mapping-connections-apis-sdks-flat-files.html">Mapping Your Connections: APIs, SDKs and Flat Files</a></span><span class="meta">Sep 22, 2026 <span class="tag">data</span><span class="tag">integration</span></span><p class="desc">Three ways computer systems share information, explained without jargon, plus a simple way to map them.</p></li>
+<li data-tags="data design"><span class="title"><a href="/blog/wireframe-development-for-data-analysis.html">Wireframes for Data Analysis: Sketch It Before You Build It</a></span><span class="meta">Aug 18, 2026 <span class="tag">data</span><span class="tag">design</span></span><p class="desc">A plain-English guide to wireframing a dashboard: what it is, why it saves time, and how to draw one in an afternoon.</p></li>
+</ul></section>
+
+<section id="projects"><h2>Projects</h2>
+<ul class="list" data-tag-list="project">
+<li><p class="desc">Coming soon.</p></li>
+</ul></section>
+
+<section id="trainings"><h2>Trainings</h2>
+<ul class="list" data-tag-list="training">
+<li><p class="desc">Coming soon.</p></li>
 </ul></section>
 
 <section id="docs"><h2>Docs</h2>
@@ -87,4 +89,4 @@
 <li><span class="title"><a href="#">Getting started</a></span><span class="meta">Guide</span><p class="desc">Point this at a /docs folder, or at a docs site such as MkDocs.</p></li>
 </ul></section>
 </main>
-<footer><div class="wrap"><span>© 2026 hardpress.dev</span><span class="foot-links"><button class="btn btn-sm theme-toggle" type="button">Dark mode</button><a href="https://github.com/hardpress-dev/main">GitHub</a><a href="/feed.xml">RSS</a></span></div></footer><script src="/site.js" defer></script></body></html>
+<footer><div class="wrap"><span>© 2026 hardpress.dev</span><span class="foot-links"><button class="btn btn-sm theme-toggle" type="button">Dark mode</button><a href="https://github.com/hardpress-dev/main">GitHub</a><a href="/feed.xml">RSS</a></span></div></footer><script>(function(){var src=document.querySelectorAll('#blog [data-tags]');document.querySelectorAll('[data-tag-list]').forEach(function(ul){var t=' '+ul.getAttribute('data-tag-list')+' ',m=[];src.forEach(function(li){if((' '+li.getAttribute('data-tags')+' ').indexOf(t)>-1)m.push(li.cloneNode(true))});if(m.length){ul.innerHTML='';m.forEach(function(li){ul.appendChild(li)})}})})();</script><script src="/site.js" defer></script></body></html>
