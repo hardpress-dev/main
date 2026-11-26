@@ -1,7 +1,7 @@
 {
   "name": "hardpress.dev",
   "short_name": "hardpress",
-  "description": "Code, trainings, and projects, published in the open.",
+  "description": "Code that enables change.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
